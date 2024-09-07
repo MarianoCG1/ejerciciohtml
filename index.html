@@ -3,9 +3,23 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Primer html: </title></head>
+    <title>Primer html: </title>
+
+</head>
+
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("btnNewUrl").addEventListener("click", function(){
+                //alert("hola");
+                //window.location.href = "https://www.machupicchu.gob.pe/"
+                window.open("https://www.machupicchu.gob.pe/", "_blank")
+            });
+
+        });
+    </script>
+
     <h1>Lugares del Perú</h1>
     <section name="Machu Picchu">
         <h2>Machu Picchu</h2>
@@ -19,7 +33,9 @@
             <li>Explorar las ruinas antiguas</li>
         </ul>
 
-        <p>Más información <a href="https://www.machupicchu.gob.pe/" target="_blank">aqui</a></p>
+        <p>Más información en
+            <button id="btnNewUrl">Machu Picchu</button>
+            </p>
     </section>
 
     <section name="Ollantaytambo"></section>
